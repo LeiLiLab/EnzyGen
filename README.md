@@ -2,7 +2,7 @@
 
 <h2>Model Architecture</h2>
 
-![image](https://github.com/JocelynSong/NAEPro/raw/main/NAEPro_model.png)
+![image](https://github.com/JocelynSong/EnzyGen/blob/main/enzygen_overview.pdf)
 
 
 <h2>Environment</h2>
