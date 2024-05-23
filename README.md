@@ -2,7 +2,7 @@
 
 <h2>Model Architecture</h2>
 
-![image](https://github.com/JocelynSong/EnzyGen/blob/main/enzygen_overview.pdf)
+![image](./enzygen_overview.png)
 
 
 <h2>Environment</h2>
