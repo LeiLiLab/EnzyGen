@@ -186,9 +186,10 @@ def cli_main():
         override_parser, suppress_defaults=True
     )
 
-    distributed_utils.call_main(
-        convert_namespace_to_omegaconf(args), main, override_args=override_args
-    )
+    # distributed_utils.call_main(
+    #     convert_namespace_to_omegaconf(args), main, override_args=override_args
+    # )
+    main(convert_namespace_to_omegaconf(args), override_args)
 
 
 if __name__ == "__main__":
