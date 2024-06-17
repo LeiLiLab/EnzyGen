@@ -95,8 +95,8 @@ The evaluation code for ESP score is developed by Alexander Kroll, which can be 
 
 <h2>Citation</h2>
 If you find our work helpful, please consider citing our paper.
-```markdown
-@inproceedings{songgenerative,
+```angular2html
+@inproceedings{{songgenerative,
   title={Generative Enzyme Design Guided by Functionally Important Sites and Small-Molecule Substrates},
   author={Song, Zhenqiao and Zhao, Yunlong and Shi, Wenxian and Jin, Wengong and Yang, Yang and Li, Lei},
   booktitle={Forty-first International Conference on Machine Learning}
