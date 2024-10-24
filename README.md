@@ -120,7 +120,6 @@ If you find our work helpful, please consider citing our paper.
 @inproceedings{songgenerative,
   title={Generative Enzyme Design Guided by Functionally Important Sites and Small-Molecule Substrates},
   author={Song, Zhenqiao and Zhao, Yunlong and Shi, Wenxian and Jin, Wengong and Yang, Yang and Li, Lei},
-  booktitle={Forty-first International Conference on Machine Learning},
-  year={2024}
+  booktitle={Forty-first International Conference on Machine Learning}
 }
 ```
