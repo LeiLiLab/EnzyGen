@@ -72,6 +72,26 @@ There are five items in the output directory:
 4. pred_pdbs refers to the directory of designed pdbs
 5. tgt_pdbs refers to the directory of target pdbs
 
+<h2>Finetune your own model</h2>
+To finetune your own model based on our trained model, please follow the guidelines below:
+
+<h3>Prepare your own data</h3>
+We provide a case of training data at preprocess/case.json. For training and validation, you should prepare ['seq', 'coor', 'motif', 'pdb', 'ec4', 'substrate', 'binding', 'substrate_coor', 'substrate_feat'] features. Seq denotes the protein sequence, coor denotes the alpha-carbon coordinates which is flattened with the order of x, y, z coordinate.
+motif denotes the functional sites indexing from 0. pdb denotes the pdb id and chain. ec4 dotes the fourth EC category.
+substrate denotes the substrate id and binding (0 or 1) denotes if the substrates can bind to the enzyme.
+substrate_coor and substrate_feat respectively denotes the coordinates and features of the substrates.
+You can extract the substrate coordinates and features using preprocess/get_substrate_feature.py.
+
+```markdown
+python preprocess/get_substrate_feature.py
+```
+
+<h3>Finetuning your model</h3>
+After preparing your own data, you can finetune your model using finetune.sh
+
+```markdown
+bash finetune.sh
+```
 
 <h2>Evaluation</h2>
 We provide the ESP evaluation data at [ESP_data_eval](https://drive.google.com/file/d/1q8NENdVWBufz5fDk7TviS6h6_BKmfviN/view?usp=drive_link)
