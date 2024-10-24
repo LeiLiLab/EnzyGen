@@ -82,14 +82,14 @@ substrate denotes the substrate id and binding (0 or 1) denotes if the substrate
 substrate_coor and substrate_feat respectively denotes the coordinates and features of the substrates.
 You can extract the substrate coordinates and features using preprocess/get_substrate_feature.py.
 
-```markdown
+```ruby
 python preprocess/get_substrate_feature.py
 ```
 
 <h3>Finetuning your model</h3>
 After preparing your own data, you can finetune your model using finetune.sh
 
-```markdown
+```ruby
 bash finetune.sh
 ```
 
