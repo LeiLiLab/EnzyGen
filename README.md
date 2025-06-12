@@ -94,7 +94,7 @@ bash finetune.sh
 ```
 
 <h2>Evaluation</h2>
-We provide the ESP evaluation data at [ESP_data_eval](https://drive.google.com/file/d/1q8NENdVWBufz5fDk7TviS6h6_BKmfviN/view?usp=drive_link)
+We provide the ESP evaluation data at [ESP_data_eval](https://drive.google.com/file/d/1D3AfYSh6ESv6uh6E4zY1tVpOi1t8RTWI/view?usp=sharing)
 
 The format for ESP evaluation is (Protein_Sequence Substrate_Representation) for each test case.
 
