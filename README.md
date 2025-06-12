@@ -35,7 +35,7 @@ wget https://drive.google.com/file/d/1BCitsFRQpzUbGss7xBpTpvKcMcJh_oOz/view?usp=
 
 <h2>Download Model</h2>
 
-We provide the checkpoint used in the paper at [Model](https://drive.google.com/file/d/1J017IloeycjTucovPncg-URMhnHr-jie/view?usp=drive_link) 
+We provide the checkpoint used in the paper at [Model](https://drive.google.com/file/d/1Sn6uKNnL8gkDErKZ6hFic5lmEF3Vb9Ue/view?usp=sharing) 
 
 
 Please download the checkpoints and put them in the models folder.
