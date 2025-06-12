@@ -226,7 +226,7 @@ class GeometricProteinModel(TransformerModel):
                        in_edge_nf=0, device=device, n_layers=args.decoder_layers, attention=True, mode=args.egnn_mode)
         return decoder
 
-    def forward(self, src_tokens, src_lengths, coords, motifs, ec1, ec2, ec3, ec4):
+    def forward(self, src_tokens, src_lengths, coors, motifs, ec1, ec2, ec3, ec4):
         need_head_weights = False
         return_contacts = False
         if return_contacts:
@@ -275,6 +275,7 @@ class GeometricProteinModel(TransformerModel):
             padding_mask = None
 
         # prepare decoder
+        coords = torch.empty_like(coors).copy_(coors)
         for i in range(coords.size(0)):
             for j in range(coords.size(1)):
                 if input_mask[i][j] == 1:
@@ -362,7 +363,7 @@ class GeometricProteinSubstrateModel(GeometricProteinModel):
                                             mode=args.egnn_mode)
         self.score = nn.Linear(args.encoder_embed_dim * 2, 2)
 
-    def forward(self, src_tokens, src_lengths, coords, motifs, ec1, ec2, ec3, ec4, substrate_coor=None, substrate_atom=None):
+    def forward(self, src_tokens, src_lengths, coors, motifs, ec1, ec2, ec3, ec4, substrate_coor=None, substrate_atom=None):
         need_head_weights = False
         return_contacts = False
         if return_contacts:
@@ -411,6 +412,7 @@ class GeometricProteinSubstrateModel(GeometricProteinModel):
             padding_mask = None
 
         # prepare decoder
+        coords = torch.empty_like(coors).copy_(coors)
         for i in range(coords.size(0)):
             for j in range(coords.size(1)):
                 if input_mask[i][j] == 1:
